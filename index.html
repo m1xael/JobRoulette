@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Startseite</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="animation.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="roulette.js" defer></script>
+  </head>
+  <body>
+    <video autoplay muted loop id="background-video">
+      <source src="video.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <header>
+      <div class="logo">
+       <a href="index.html"><img src="logo.png" alt="Firmenlogo"></a>
+      </div>
+      <nav>
+        <ul>
+          <div class="hdrbtns">
+          <li><a href="index.html#kontakt">Kontakt</a></li>
+          <li><a href="index.html#ueber-uns">Was ist das?</a></li>
+          <li><a href="signin.html">Anmelden</a></li> 
+        </div>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <a href="index.html"><img src="logo.png" alt="Firmenlogo" class="fade-in logo2"></a>
+      <p class="fade-in">Weil 10 Minuten dein Leben verändern können ;-)</p>
+      <a href="signin.html" class="btn fade-in">Anmelden</a> 
+      <a href="index.html#ueber-uns" class="btn fade-in">Was ist das?</a> 
+    </main>
+    
+    <div class="container container-overlay">
+      <section id="kontakt" class="section-overlay fade-in">
+        <h2>Kontakt</h2>
+        <p>Schreib uns doch!</p>
+        <form action="submit_form.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required></input>
+          <label for="email">E-Mail:</label>
+          <input type="email" id="email" name="email" required></input>
+          <label for="message">Nachricht:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit" name="button"> Absenden </button>
+        </form>
+      </section>
+    
+      <section id="ueber-uns" class="section-overlay fade-in">
+        <h2>Was ist das?</h2>
+        <p>Gut, dass du fragst!<br>...</p>
+      </section>
+    </div>
+
+    <footer>
+          <div class="legal-buttons">
+          <a href="agb.html">AGB</a>
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+          </div>
+          <div class="social-buttons-container">
+            <ul class="list-inline social-buttons">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+    </footer>
+  </body>
+</html>
